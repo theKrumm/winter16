@@ -11,9 +11,13 @@
     <%= csrf_meta_tags %>
   </head>
 
+  <%= render "components/nav" %>
+  
   <body>
 
     <%= yield %>
 
   </body>
+  
+  <%= render "components/footer" %>
 </html>
