@@ -1,6 +1,9 @@
 
 
-<div class="row column">
+
+<footer class="footer" id="footer">
+
+  <div class="row column">
    
     <hr>
     <ul class="menu">
@@ -11,3 +14,24 @@
         <li class="float-right">Copyright 2016</li>
     </ul>
 </div>
+
+</footer>
+
+
+<script>
+$(window).bind("load", function () { // make sure footer sticks to bottom of the page
+    var footer = $("#footer");
+    var pos = footer.position();
+    var height = $(window).height();
+    height = height - pos.top;
+    height = height - footer.height();
+    if (height > 0) {
+        footer.css({
+            'margin-top': height + 'px'
+        });
+    }
+});
+</script>
+
+
+
