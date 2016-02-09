@@ -17,131 +17,54 @@
  */
 
 
-
 .footer {
-
   /*background-color: #4b2e83;*/
-
   padding: 2rem 4rem;
-
   text-align: center;
-
   /*color: #fff;*/
-
 }
 
 .footer i {
-
   font-size: 100px;
-
 }
 
-
-
 .footer h4 {
-
   /*color: #fff;*/
-
   font-size: 1em;
-
   font-weight: 400;
-
   text-transform: uppercase;
-
   margin-top: 2.5rem;
-
   margin-bottom: 10px;
-
 }
 
 .footer p, .footer a {
-
   font-weight: 300;
-
   font-size: .8em;
-
-  /*color: #fff;*/
-
+  color: #0DA2C2;
 }
 
-
-
 @media only screen and (min-width: 40.063em) {
-
   .footer .columns:nth-child(n+2) {
-
     border-left: 1px solid #b3b3b3;
-
     min-height: 280px;
-
   }
-
 }
 
 .footer-links {
-
   list-style-type: none;
-
 }
 
 .footer-links li {
-
   margin-top: .5em;
-
 }
 
 
-
-.box {
-  border-radius: 3px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  padding: 10px 25px;
-  display: block;
-  margin-top: 60px; }
-
-.box-icon {
-  background-color: #569;
-  border-radius: 50%;
-  display: table;
-  height: 100px;
-  margin: 0 auto;
-  width: 100px;
-  margin-top: -61px;
-  font-size: 3rem; }
-  .box-icon span {
-    color: #fff;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle; }
-
-.info p {
-  color: #717171;
-  font-size: 16px;
-  padding-top: 10px; }
-.info a {
-  border-radius: 2px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  transition: all 0.5s ease 0s; }
-  .info a:hover {
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
-    transition: all 0.5s ease 0s; }
-
-
-
-
-
-
-
-
-
-
+/* MAIN SEARCH BAR  */
 
 .hero {
   background: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-317049.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh; }
-
- 
+  height: 85vh; }
 
   .hero .intro {
     padding: 3rem;
@@ -152,12 +75,87 @@
     color: #fff;
     font-size: 2.5rem;
     line-height: 1.5em;
-    letter-spacing: -0.025em;
+    letter-spacing: 0.125em;
     font-weight: 300;
     text-align: center; }
-  .hero p {
-    color: #fff;
-    line-height: 2.75em;
-    font-weight: 200;
-    text-align: center;
-    margin-bottom: 2rem; }
+
+
+/* INSTRUCTIONS */
+.features {
+  color: #999999;
+  text-align: center; }
+  .features hr {
+    width: 25%;
+    margin: 1rem auto; }
+  .features .round-icon {
+    background-color: #999999;
+    border-radius: 50%;
+    display: table;
+    height: 100px;
+    margin: 80px auto 1rem;
+    width: 100px;
+    font-size: 3rem; }
+    .features .round-icon span {
+      color: #fff;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
+  @media only screen and (max-width: 40em) {
+    .features .columns {
+      margin-bottom: 5rem; } }
+
+
+
+.button {
+    background-color: #0DA2C2; }
+    .button:hover {
+        background-color: #515f7b; }
+
+
+
+/* CARDS */
+.box {
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 10px 25px;
+  display: block;
+  margin-top: 50px; }
+
+/*.box-icon {
+  */
+  /*  background-color: #569;*/
+  /*  border-radius: 10%;*/
+  /*  display: table;*/
+  /*  height: 100px;*/
+  /*  margin: 0 auto;*/
+  /*  width: 100px;*/
+  /*  margin-top: -61px;*/
+  /*  font-size: 3rem; }*/
+  /*  .box-icon span {*/
+  /*    color: #fff;*/
+  /*    display: table-cell;*/
+  /*    text-align: center;*/
+  /*    vertical-align: middle; }*/
+
+.info p {
+  text-align: center;
+  color: #999999;
+  font-size: 16px;
+  padding-top: 10px; }
+
+.info a {
+  color: #0DA2C2; }
+
+.info ul {
+  text-align:center; }
+  .info li {
+    display:inline;
+    padding:1em; }
+  
+/*  border-radius: 2px;*/
+/*  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
+/*  transition: all 0.5s ease 0s; }*/
+/*  .info a:hover {*/
+/*    background-color: #515f7b;*/
+/*    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);*/
+/*    transition: all 0.5s ease 0s; }*/
