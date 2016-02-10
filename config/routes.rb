@@ -1,13 +1,8 @@
 Rails.application.routes.draw do
-
-
-  get 'pages/register'
-
-  get 'pages/login'
-  
-  get  'pages/contact'
-  
-
+  resources :users
   root 'pages#home'
-
+  get 'register'  => 'pages#register'
+  get 'about' => 'pages#about'
+  get 'contact' => 'pages#contact'
+  get 'login' => 'pages#login'
 end

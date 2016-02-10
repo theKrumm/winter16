@@ -16,6 +16,7 @@
 
  */
 
+
 #navigation {
 position: fixed;
 z-index: 10;
@@ -23,9 +24,27 @@ width: 100%;
 }
 
 #stars {
-  background: url(http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/01/Magic-Night-Afternoon-HD-Wallpapers.jpg) no-repeat center center;
+  background: url(http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/01/Magic-Night-Afternoon-HD-Wallpapers.jpg);
 }
 
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+}
+
+/* added for css signup */
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+
+}
+
+input {
+  height: auto !important;
+}
 
 .footer {
 
@@ -237,3 +256,61 @@ width: 100%;
         .profile-card .profile-info .inline-list i.fi-social-youtube:hover {
           transform: scale(1.5);
           transition: all .5s ease-in-out; }
+
+
+
+
+.signup-panel {
+
+  border-radius: 5px;
+
+  border: 1px solid #ccc;
+
+  padding: 15px;
+
+  margin-top: 30px;
+
+}
+
+.signup-panel i {
+
+  font-size: 30px;
+
+  line-height: 50px;
+
+  color: #999;
+
+}
+
+.signup-panel form input, .signup-panel form span {
+
+  height: 50px;
+
+}
+
+.signup-panel .welcome {
+
+  font-size: 26px;
+
+  text-align: center;
+
+  margin-left: 0;
+
+}
+
+.signup-panel p {
+
+  font-size: 13px;
+
+  font-weight: 200;
+
+  margin-left: 25%;
+
+}
+
+.signup-panel .button {
+
+  margin-left: 35%;
+
+}
+

@@ -1,0 +1,66 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+     <div class="large-6 columns">
+       <div class="signup-panel">
+         <p class="welcome"> How many times can we say sign up!</p>
+
+         <div class="row collapse">
+           <div class="small-12  columns">
+              <%= f.text_field :username, :size=>"95", class: 'error', :placeholder => "theScienceGuy" %>
+           </div>
+         </div>
+
+         <div class="row collapse">
+           <div class="small-12  columns">
+              <%= f.text_field :firstname, :size=>"95", class: 'error', :placeholder => "Bill" %>
+          </div>
+         </div>
+
+         <div class="row collapse">
+           <div class="small-12  columns">
+              <%= f.text_field :lastname, :size=>"95", class: 'error', :placeholder => "Nye" %>
+           </div>
+         </div>
+
+         <div class="row collapse">
+           <div class="small-12  columns">
+              <%= f.email_field :email, :size=>"95", class: 'error', :placeholder => "bnye@uw.edu" %>
+           </div>
+         </div>
+
+         <div class="row collapse">
+           <div class="small-12  columns">
+             <!-- <input type="text" placeholder="username"> -->
+              <%= f.password_field :password, :size=>"95", class: 'error', :placeholder => "password" %>
+           </div>
+         </div>
+
+         <div class="row collapse">
+           <div class="small-12  columns">
+             <!-- <input type="text" placeholder="username"> -->
+              <%= f.password_field :password_confirmation, :placeholder => "re-enter password" %>
+           </div>
+         </div>
+
+         <div class="row collapse">
+           <div class="small-4 columns">
+             <%= f.submit "sign up!", class: "button" %>
+           </div>
+         </div>
+         <p>Already have an account? <a href="#">Login here &raquo</a></p>
+       </div>
+     </div>
+   </div>
+<% end %>
