@@ -16,13 +16,17 @@
 
  */
 
+.container {
+  padding-top: 50px;
+}
 
 #navigation {
 position: fixed;
-z-index: 10;
+z-index: 10; 
 
 width: 100%;
 }
+
 
 #stars {
   background: url(http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/01/Magic-Night-Afternoon-HD-Wallpapers.jpg);

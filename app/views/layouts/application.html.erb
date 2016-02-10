@@ -11,15 +11,14 @@
     <%= csrf_meta_tags %>
   </head>
   
-  <%= render "components/nav" %>
-
   <body>
+    <%= render "components/nav" %>
     <div class="container">
       <%= yield %>
       <%= debug(params) if Rails.env.development? %>
+      <%= render "components/footer" %>
     </div>
-
   </body>
 
-  <%= render "components/footer" %>
+  
 </html>
