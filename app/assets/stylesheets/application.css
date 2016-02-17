@@ -1,31 +1,47 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- *= require foundation_and_overrides
-
- */
-
-<<<<<<< HEAD
-=======
 .container {
   padding-top: 50px;
 }
->>>>>>> 458ff23f1f55e4964a1bda3c9449f66add53476c
+/* ABOUT PAGE  */
+.about {
+  background: url(about.jpg) no-repeat center center;
+  background-size: cover;
+  height: 60vh; }
+
+/*body {*/
+/*  background: #333; }*/
+
+.header.panel {
+  margin: 3rem auto; }
+  /*border: 2px solid #444;*/
+  /*background: #fff; }*/
+  .header.panel p {
+    /*font: 1rem "Avenir Next";*/
+    text-align: center;
+    padding: 1rem 2rem 2rem 2rem;
+    margin-top: -1.25rem; }
+  .header.panel .sign {
+    /*background: #fff;*/
+    width: 150px;
+    height: 2.4rem;
+    /*border: 2px solid #444;*/
+    position: relative;
+    top: -2.5rem;
+    margin: auto; }
+    .header.panel .sign h1 {
+      text-transform: uppercase;
+      /*font: bolder 0.875rem "Avenir Next";*/
+      letter-spacing: 3px;
+      color: #666;
+      font-size: 24px;
+      text-align: center;
+      line-height: 2rem; }
+
+
+
 
 #navigation {
 position: fixed;
-z-index: 10; 
+z-index: 10;
 
 width: 100%;
 }
@@ -56,6 +72,8 @@ input {
 width: 100%; }
 #navigation a {
   color: #0DA2C2; }
+#navigation a:hover {
+  color: #0a778f; }
 
 
 .footer {
@@ -100,121 +118,12 @@ width: 100%; }
 }
 
 
-<<<<<<< HEAD
-
-
-
-.signup-panel {
-
-  border-radius: 5px;
-
-  border: 1px solid #ccc;
-
-  padding: 15px;
-
-  margin-top: 30px;
-
-}
-
-.signup-panel i {
-
-  font-size: 30px;
-
-  line-height: 50px;
-
-  color: #999;
-
-}
-
-.signup-panel form input, .signup-panel form span {
-
-  height: 50px;
-
-}
-
-.signup-panel .welcome {
-
-  font-size: 26px;
-
-  text-align: center;
-
-  margin-left: 0;
-
-}
-
-.signup-panel p {
-
-  font-size: 13px;
-
-  font-weight: 200;
-
-  margin-left: 25%;
-
-}
-
-.signup-panel .button {
-
-  margin-left: 35%;
-
-}
-
-.box {
-  border-radius: 3px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  padding: 10px 25px;
-  display: block;
-  margin-top: 60px; }
-
-.box-icon {
-  background-color: #569;
-  border-radius: 50%;
-  display: table;
-  height: 100px;
-  margin: 0 auto;
-  width: 100px;
-  margin-top: -61px;
-  font-size: 3rem; }
-  .box-icon span {
-    color: #fff;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle; }
-
-.info p {
-  color: #717171;
-  font-size: 16px;
-  padding-top: 10px; }
-.info a {
-  border-radius: 2px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  transition: all 0.5s ease 0s; }
-  .info a:hover {
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
-    transition: all 0.5s ease 0s; }
-
-
-
-
-
-
-
-
-
-
-=======
 /* MAIN SEARCH BAR  */
->>>>>>> 458ff23f1f55e4964a1bda3c9449f66add53476c
 
 .hero {
   background: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-317049.jpg") no-repeat center center;
   background-size: cover;
-<<<<<<< HEAD
-  height: 100vh; }
-
-
-=======
   height: 85vh; }
->>>>>>> 458ff23f1f55e4964a1bda3c9449f66add53476c
 
   .hero .intro {
     padding: 3rem;
@@ -235,8 +144,6 @@ width: 100%; }
     font-weight: 200;
     text-align: center;
     margin-bottom: 2rem; }
-<<<<<<< HEAD
-=======
 
 
 
@@ -390,12 +297,10 @@ width: 100%; }
       margin-bottom: 5rem; } }
 
 
-
 .button {
     background-color: #0DA2C2; }
     .button:hover {
-        background-color: #515f7b; }
-
+        background-color: #0a778f; }
 
 
 /* CARDS */
@@ -415,11 +320,11 @@ width: 100%; }
 
 .info a {
   color: #0DA2C2; }
+  .info a:hover {
+    color: #0a778f; }
 
 .info ul {
   text-align:center; }
   .info li {
     display:inline;
     padding:1em; }
-  
->>>>>>> 458ff23f1f55e4964a1bda3c9449f66add53476c

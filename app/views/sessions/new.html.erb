@@ -1,0 +1,11 @@
+<h1>Log in</h1>
+
+<div>
+  <div class="col-md-6 cold-md-offset-3">
+    <%= form_for(:session, url: login_path) do |f| %>
+      <%= f.email_field :email, :size=>"95", class: 'error', :placeholder => "bnye@uw.edu" %>
+      <%= f.email_field :password, :size=>"95", class: 'error', :placeholder => "eat_a_dick" %>
+    <% end %>
+    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+  </div>
+</div>
