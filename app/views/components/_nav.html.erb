@@ -1,17 +1,12 @@
 
 
 <div id="navigation">
-<div class="title-bar" data-responsive-toggle="realEstateMenu" data-hide-for="small">
-  <button class="menu-icon" type="button" data-toggle></button>
-  <div class="title-bar-title">Menu</div>
-  </div>
 
   <div class="top-bar" id="realEstateMenu">
     <div class="top-bar-left">
       <ul class="menu" data-responsive-menu="accordion">
         <li class="menu-text">Study Buddy</li>
-        <li><%= link_to "Subjects" %></li>
-        <li><%= link_to "Study Groups" %></li>
+        <li><%= link_to "Study Groups", groups_path %></li>
         <li><%= link_to "Locations" %></li>
       </ul>
     </div>
@@ -21,7 +16,9 @@
           <li><a href="#">My Profile</a></li>
           <li><%= link_to "Log out", logout_path, method: "delete" %></li>
         <% else %>
-          <li><a class="hollow button">Login</a></li>
+          <li><%= link_to "Sign Up", signup_path %></li>
+          <li><%= link_to "Log In", login_path %></li>
+
         <% end %>
       </ul>
     </div>
