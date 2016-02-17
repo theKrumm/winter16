@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'locations/new'
+
+  get 'groups/new'
+
   root 'pages#home'
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'

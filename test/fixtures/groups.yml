@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  primary_contact: MyString
+  subject: MyString
+  date: 2016-02-17 14:26:00
+  location_id: 1
+  group_size: 1
+  permission: false
+
+two:
+  primary_contact: MyString
+  subject: MyString
+  date: 2016-02-17 14:26:00
+  location_id: 1
+  group_size: 1
+  permission: false
