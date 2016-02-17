@@ -17,8 +17,12 @@
     </div>
     <div class="top-bar-right">
       <ul class="menu">
-        <li><a href="#">My Account</a></li>
-        <li><a class="hollow button">Login</a></li>
+        <% if logged_in? %>
+          <li><a href="#">My Profile</a></li>
+          <li><%= link_to "Log out", logout_path, method: "delete" %></li>
+        <% else %>
+          <li><a class="hollow button">Login</a></li>
+        <% end %>
       </ul>
     </div>
 
