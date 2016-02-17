@@ -1,10 +1,15 @@
 <h1>Log in</h1>
 
 <div>
-  <div class="col-md-6 cold-md-offset-3">
+  <div class="large-6 columns">
     <%= form_for(:session, url: login_path) do |f| %>
+    <div class="small-12  columns">
       <%= f.email_field :email, :size=>"95", class: 'error', :placeholder => "bnye@uw.edu" %>
+    </div>
+    <div class="small-12  columns">
       <%= f.email_field :password, :size=>"95", class: 'error', :placeholder => "eat_a_dick" %>
+    </div>
+      <%= f.submit "Log in", class: "button" %>
     <% end %>
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>
   </div>

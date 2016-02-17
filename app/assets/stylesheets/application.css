@@ -1,43 +1,24 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+
 .container {
   padding-top: 50px;
 }
-/* ABOUT PAGE  */
-.about {
-  background: url(about.jpg) no-repeat center center;
-  background-size: cover;
-  height: 60vh; }
-
-/*body {*/
-/*  background: #333; }*/
-
-.header.panel {
-  margin: 3rem auto; }
-  /*border: 2px solid #444;*/
-  /*background: #fff; }*/
-  .header.panel p {
-    /*font: 1rem "Avenir Next";*/
-    text-align: center;
-    padding: 1rem 2rem 2rem 2rem;
-    margin-top: -1.25rem; }
-  .header.panel .sign {
-    /*background: #fff;*/
-    width: 150px;
-    height: 2.4rem;
-    /*border: 2px solid #444;*/
-    position: relative;
-    top: -2.5rem;
-    margin: auto; }
-    .header.panel .sign h1 {
-      text-transform: uppercase;
-      /*font: bolder 0.875rem "Avenir Next";*/
-      letter-spacing: 3px;
-      color: #666;
-      font-size: 24px;
-      text-align: center;
-      line-height: 2rem; }
-
-
-
 
 #navigation {
 position: fixed;
@@ -72,8 +53,6 @@ input {
 width: 100%; }
 #navigation a {
   color: #0DA2C2; }
-#navigation a:hover {
-  color: #0a778f; }
 
 
 .footer {
@@ -119,11 +98,10 @@ width: 100%; }
 
 
 /* MAIN SEARCH BAR  */
-
 .hero {
   background: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-317049.jpg") no-repeat center center;
   background-size: cover;
-  height: 85vh; }
+  height: 100vh; }
 
   .hero .intro {
     padding: 3rem;
@@ -297,10 +275,12 @@ width: 100%; }
       margin-bottom: 5rem; } }
 
 
+
 .button {
     background-color: #0DA2C2; }
     .button:hover {
-        background-color: #0a778f; }
+        background-color: #515f7b; }
+
 
 
 /* CARDS */
@@ -320,8 +300,6 @@ width: 100%; }
 
 .info a {
   color: #0DA2C2; }
-  .info a:hover {
-    color: #0a778f; }
 
 .info ul {
   text-align:center; }
