@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   
   get 'groups' => 'pages#groups'
+  get 'profile' => 'users#edit'
   resources :users
 end
