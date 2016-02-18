@@ -1,17 +1,27 @@
-
-<h1>Log in</h1>
-
-<div class="login-box">
-  <div class="large-6 columns">
-    <%= form_for(:session, url: login_path) do |f| %>
-    <div class="small-12  columns">
-      <%= f.email_field :email, :size=>"95", class: 'error', :placeholder => "Email" %>
-    </div>
-    <div class="small-12  columns">
-      <%= f.password_field :password, :size=>"95", class: 'error', :placeholder => "Password" %>
-    </div>
-      <%= f.submit "Log in", class: "button" %>
-    <% end %>
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+<div class="row">
+  <div class="small-6 small-centered columns">
+    <div class="login-box">
+      <p class="welcome">Sign in to Study Buddy</p>
+  
+      <%= form_for(:session, url: login_path) do |f| %>
+      <div class="small-12 columns">
+        <%= f.email_field :email, :size=>"95", class: 'error', :placeholder => "Email" %>
+      </div>
+      
+      <div class="small-12 columns">
+        <%= f.password_field :password, :size=>"95", class: 'error', :placeholder => "Password" %>
+      </div>
+        
+      <div class="row collapse">
+        <div class="small-4 small-centered columns">
+          <%= f.submit "Log In", class: "button" %>
+        </div>
+      </div>
+          
+      <!--<%= f.submit "Log In", class: "button" %>-->
+      <% end %>
+  
+      <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    </div
   </div>
 </div>
