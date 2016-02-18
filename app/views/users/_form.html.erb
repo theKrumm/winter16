@@ -11,55 +11,56 @@
     </div>
   <% end %>
 
+
   <div class="row">
-     <div class="large-6 columns">
+     <div class="large-6 large-centered columns">
        <div class="signup-panel">
-         <p class="welcome"> How many times can we say sign up!</p>
+         <p class="welcome">Create your Study Buddy account</p>
 
          <div class="row collapse">
            <div class="small-12  columns">
-              <%= f.text_field :username, :size=>"95", class: 'error', :placeholder => "theScienceGuy" %>
+              <%= f.text_field :username, :size=>"95", class: 'error', :placeholder => "Username", :style=>"background-color: transparent" %>
            </div>
          </div>
 
          <div class="row collapse">
            <div class="small-12  columns">
-              <%= f.text_field :firstname, :size=>"95", class: 'error', :placeholder => "Bill" %>
+              <%= f.text_field :firstname, :size=>"95", class: 'error', :placeholder => "First Name", :style=>"background-color: transparent"  %>
           </div>
          </div>
 
          <div class="row collapse">
            <div class="small-12  columns">
-              <%= f.text_field :lastname, :size=>"95", class: 'error', :placeholder => "Nye" %>
+              <%= f.text_field :lastname, :size=>"95", class: 'error', :placeholder => "Last Name", :style=>"background-color: transparent"  %>
            </div>
          </div>
 
          <div class="row collapse">
            <div class="small-12  columns">
-              <%= f.email_field :email, :size=>"95", class: 'error', :placeholder => "bnye@uw.edu" %>
-           </div>
-         </div>
-
-         <div class="row collapse">
-           <div class="small-12  columns">
-             <!-- <input type="text" placeholder="username"> -->
-              <%= f.password_field :password, :size=>"95", class: 'error', :placeholder => "password" %>
+              <%= f.email_field :email, :size=>"95", class: 'error', :placeholder => "Email", :style=>"background-color: transparent"  %>
            </div>
          </div>
 
          <div class="row collapse">
            <div class="small-12  columns">
              <!-- <input type="text" placeholder="username"> -->
-              <%= f.password_field :password_confirmation, :size=>"95", :placeholder => "re-enter password" %>
+              <%= f.password_field :password, :size=>"95", class: 'error', :placeholder => "Password", :style=>"background-color: transparent"  %>
            </div>
          </div>
 
          <div class="row collapse">
-           <div class="small-4 columns">
-             <%= f.submit "sign up!", class: "button" %>
+           <div class="small-12  columns">
+             <!-- <input type="text" placeholder="username"> -->
+              <%= f.password_field :password_confirmation, :size=>"95", :placeholder => "Re-enter password", :style=>"background-color: transparent"  %>
            </div>
          </div>
-         <p>Already have an account? <a href="#">Login here &raquo</a></p>
+
+         <div class="row collapse">
+           <div class="small-4 small-centered columns">
+             <%= f.submit "Sign Up & Study", class: "button" %>
+           </div>
+         </div>
+         <p>Already have an account? <a href="#">Login here</a></p>
        </div>
      </div>
    </div>
