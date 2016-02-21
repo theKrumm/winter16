@@ -1,30 +1,10 @@
 <div id="navigation">
-<<<<<<< HEAD
-  <div class="title-bar" data-responsive-toggle="realEstateMenu" data-hide-for="small">
-    <button class="menu-icon" type="button" data-toggle></button>
-    <div class="title-bar-title">Menu</div>
-  </div>
-=======
->>>>>>> 161b86467580d10f713dbdcbb96f1cc9e0cf22f5
-
   <div class="top-bar" id="realEstateMenu">
     <div class="top-bar-left">
       <ul class="menu" data-responsive-menu="accordion">
-        <li class="menu-text">Study Buddy</li>
-<<<<<<< HEAD
-        <li>
-          <%=link_to "Subjects" %>
-        </li>
-        <li>
-          <%=link_to "Study Groups" %>
-        </li>
-        <li>
-          <%=link_to "Locations" %>
-        </li>
-=======
+        <li class="menu-text"><%= link_to "Study Buddy", root_path %></li>
         <li><%= link_to "Study Groups", groups_path %></li>
         <li><%= link_to "Locations" %></li>
->>>>>>> 161b86467580d10f713dbdcbb96f1cc9e0cf22f5
       </ul>
     </div>
     <div class="top-bar-right">
@@ -35,14 +15,8 @@
         <% else %>
           <li><%= link_to "Sign Up", signup_path %></li>
           <li><%= link_to "Log In", login_path %></li>
-
         <% end %>
       </ul>
     </div>
-
-<<<<<<< HEAD
   </div>
-=======
-</div>
->>>>>>> 161b86467580d10f713dbdcbb96f1cc9e0cf22f5
 </div>
