@@ -16,6 +16,35 @@
 
  */
 
+
+/* CONTACT PAGE */
+.profile-card {
+  padding: 1rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin: 2rem 0;
+  background-color: #fff; }
+  .profile-card img {
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #888888; }
+  .profile-card .profile-info {
+    padding: 1rem; }
+    .profile-card .profile-info h4 {
+      margin-top: 0;
+      text-align: center;
+      text-transform: uppercase; }
+    .profile-card .profile-info p {
+      text-align: center; }
+/* END CONTACT PAGE */
+
+
+
+
+
 .container {
   padding-top: 50px;
 }
@@ -53,20 +82,15 @@
       font-size: 24px;
       text-align: center;
       line-height: 2rem; }
+/*END ABOUT PAGE */
 
 
-
-
+/*  NAV BAR */
 #navigation {
 position: fixed;
 z-index: 10; 
 
 width: 100%;
-}
-
-
-#stars {
-  background: url(http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/01/Magic-Night-Afternoon-HD-Wallpapers.jpg);
 }
 
 .debug_dump {
@@ -91,7 +115,10 @@ width: 100%; }
 #navigation a {
   color: #0DA2C2; }
 #navigation a:hover {
-  color: #0a778f; }
+  color: #074f5f;
+  background-color: transparent; }
+#navigation .hover.button {
+  color: #000; }
 
 
 .footer {
@@ -120,7 +147,11 @@ width: 100%; }
   color: #0DA2C2;
 }
 
-@media only screen and (min-width: 40.063em) {
+/*.footer a:hover {*/
+/*  color: #0a778f;*/
+/*  background-color: transparent; }*/
+
+@nmedia only screen and (min-width: 40.063em) {
   .footer .columns:nth-child(n+2) {
     border-left: 1px solid #b3b3b3;
     min-height: 280px;
@@ -136,7 +167,7 @@ width: 100%; }
 }
 
 
-/* MAIN SEARCH BAR  */
+/* SEARCH BAR ON MAIN PAGE*/
 
 .hero {
   background: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-317049.jpg") no-repeat center center;
@@ -165,70 +196,6 @@ width: 100%; }
 
 
 
-
-
-
-
-
-
-
-.profile-card {
-  padding: 1rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  margin: 2rem 0;
-  margin-top: 10rem;
-  background-color: #fff; }
-  .profile-card img {
-    width: 8rem;
-    display: block;
-    margin: 2rem auto;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px #888888; }
-  .profile-card .profile-info {
-    padding: 1rem; }
-    .profile-card .profile-info h4 {
-      margin-top: 0;
-      text-align: center;
-      text-transform: uppercase; }
-    .profile-card .profile-info p {
-      text-align: center; }
-    .profile-card .profile-info .inline-list {
-      text-align: center;
-      margin-bottom: 1rem; }
-      .profile-card .profile-info .inline-list li {
-        float: none;
-        display: inline-block; }
-      .profile-card .profile-info .inline-list i.fi-social-facebook {
-        font-size: 1.5rem;
-        color: #3b5998; }
-        .profile-card .profile-info .inline-list i.fi-social-facebook:hover {
-          transform: scale(1.5);
-          transition: all .5s ease-in-out; }
-      .profile-card .profile-info .inline-list i.fi-social-twitter {
-        font-size: 1.5rem;
-        color: #55acee; }
-        .profile-card .profile-info .inline-list i.fi-social-twitter:hover {
-          transform: scale(1.5);
-          transition: all .5s ease-in-out; }
-      .profile-card .profile-info .inline-list i.fi-social-linkedin {
-        font-size: 1.5rem;
-        color: #0077b5; }
-        .profile-card .profile-info .inline-list i.fi-social-linkedin:hover {
-          transform: scale(1.5);
-          transition: all .5s ease-in-out; }
-      .profile-card .profile-info .inline-list i.fi-social-github {
-        font-size: 1.5rem;
-        color: #333; }
-        .profile-card .profile-info .inline-list i.fi-social-github:hover {
-          transform: scale(1.5);
-          transition: all .5s ease-in-out; }
-      .profile-card .profile-info .inline-list i.fi-social-youtube {
-        font-size: 1.5rem;
-        color: #cc181e; }
-        .profile-card .profile-info .inline-list i.fi-social-youtube:hover {
-          transform: scale(1.5);
-          transition: all .5s ease-in-out; }
 
 
 
@@ -290,7 +257,7 @@ width: 100%; }
 
 
 
-/* INSTRUCTIONS */
+/* INSTRUCTIONS ON MAIN PAGE*/
 .features {
   color: #999999;
   text-align: center; }
@@ -315,13 +282,9 @@ width: 100%; }
       margin-bottom: 5rem; } }
 
 
-.button {
-    background-color: #0DA2C2; }
-    .button:hover {
-        background-color: #0a778f; }
 
 
-/* CARDS */
+/* SUBJECTS AND SPACES CARDS */
 .box {
   border-radius: 3px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -347,3 +310,14 @@ width: 100%; }
     display:inline;
     padding:1em; }
   
+
+
+
+
+.button {
+    background-color: #0DA2C2; }
+    .button:hover {
+        background-color: #074f5f; }
+a:hover {
+  color: #074f5f;
+  background-color: transparent; }
