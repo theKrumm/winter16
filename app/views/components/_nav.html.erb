@@ -1,13 +1,17 @@
 <div id="navigation">
+<<<<<<< HEAD
   <div class="title-bar" data-responsive-toggle="realEstateMenu" data-hide-for="small">
     <button class="menu-icon" type="button" data-toggle></button>
     <div class="title-bar-title">Menu</div>
   </div>
+=======
+>>>>>>> 161b86467580d10f713dbdcbb96f1cc9e0cf22f5
 
   <div class="top-bar" id="realEstateMenu">
     <div class="top-bar-left">
       <ul class="menu" data-responsive-menu="accordion">
         <li class="menu-text">Study Buddy</li>
+<<<<<<< HEAD
         <li>
           <%=link_to "Subjects" %>
         </li>
@@ -17,14 +21,28 @@
         <li>
           <%=link_to "Locations" %>
         </li>
+=======
+        <li><%= link_to "Study Groups", groups_path %></li>
+        <li><%= link_to "Locations" %></li>
+>>>>>>> 161b86467580d10f713dbdcbb96f1cc9e0cf22f5
       </ul>
     </div>
     <div class="top-bar-right">
       <ul class="menu">
-        <li><a href="#">My Account</a></li>
-        <li><a class="hollow button">Login</a></li>
+        <% if logged_in? %>
+          <li><%= link_to "My Profile", profile_path =%></li>
+          <li><%= link_to "Log out", logout_path, method: "delete" %></li>
+        <% else %>
+          <li><%= link_to "Sign Up", signup_path %></li>
+          <li><%= link_to "Log In", login_path %></li>
+
+        <% end %>
       </ul>
     </div>
 
+<<<<<<< HEAD
   </div>
+=======
+</div>
+>>>>>>> 161b86467580d10f713dbdcbb96f1cc9e0cf22f5
 </div>

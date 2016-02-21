@@ -1,8 +1,17 @@
 Rails.application.routes.draw do
-  resources :users
+  get 'locations/new'
+
+  get 'groups/new'
+
   root 'pages#home'
-  get 'register'  => 'pages#register'
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
-  get 'login' => 'pages#login'
+  get 'signup'  => 'users#new'
+  get 'login' => 'sessions#new'
+  post'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+  
+  get 'groups' => 'pages#groups'
+  get 'profile' => 'users#edit'
+  resources :users
 end
