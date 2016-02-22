@@ -1,11 +1,8 @@
-
-
 <div id="navigation">
-
   <div class="top-bar" id="realEstateMenu">
     <div class="top-bar-left">
       <ul class="menu" data-responsive-menu="accordion">
-        <li class="menu-text">Study Buddy</li>
+        <li class="menu-text"><%= link_to "Study Buddy", root_path %></li>
         <li><%= link_to "Study Groups", groups_path %></li>
         <li><%= link_to "Locations" %></li>
       </ul>
@@ -18,10 +15,8 @@
         <% else %>
           <li><%= link_to "Sign Up", signup_path %></li>
           <li><%= link_to "Log In", login_path %></li>
-
         <% end %>
       </ul>
     </div>
-
-</div>
+  </div>
 </div>

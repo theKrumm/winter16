@@ -18,14 +18,13 @@
 
 
 
-
 /* CONTACT PAGE */
-.profile-card {
+.contact-card {
   padding: 1rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   margin: 2rem 0;
   background-color: #fff; }
-  .profile-card img {
+  .contact-card img {
     width: 8rem;
     height: 8rem;
     display: block;
@@ -33,15 +32,16 @@
     text-align: center;
     border-radius: 50%;
     box-shadow: 2px 2px 5px #888888; }
-  .profile-card .profile-info {
+  .contact-card .contact-info {
     padding: 1rem; }
-    .profile-card .profile-info h4 {
+    .contact-card .contact-info h4 {
       margin-top: 0;
       text-align: center;
       text-transform: uppercase; }
-    .profile-card .profile-info p {
+    .contact-card .contact-info p {
       text-align: center; }
 /* END CONTACT PAGE */
+
 
 
 
@@ -85,9 +85,20 @@
       font-size: 24px;
       text-align: center;
       line-height: 2rem; }
+/*END ABOUT PAGE */
 
 
-
+/*  NAV BAR */
+#navigation {
+position: fixed;
+z-index: 10; 
+width: 100%;
+}
+#navigation .menu-text a {
+  color: #000;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 #navigation {
 position: fixed;
 z-index: 10;
@@ -105,7 +116,7 @@ width: 100%; }
   clear: both;
   float: left;
   width: 100%;
-  margin-top: 45px;
+  /*margin-top: 45px;*/
 }
 
 /* added for css signup */
@@ -118,7 +129,6 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;}
-
 
 
 
@@ -147,6 +157,10 @@ input {
   font-size: .8em;
   color: #0DA2C2;
 }
+
+/*.footer a:hover {*/
+/*  color: #0a778f;*/
+/*  background-color: transparent; }*/
 
 @media only screen and (min-width: 40.063em) {
   .footer .columns:nth-child(n+2) {
@@ -189,6 +203,7 @@ input {
     font-weight: 200;
     text-align: center;
     margin-bottom: 2rem; }
+
 
 
 
@@ -242,7 +257,7 @@ input {
 
 
 
-/* INSTRUCTIONS */
+/* INSTRUCTIONS ON MAIN PAGE*/
 .features {
   color: #999999;
   text-align: center; }
@@ -269,7 +284,7 @@ input {
 
 
 
-/* CARDS */
+/* SUBJECTS AND SPACES CARDS */
 .box {
   border-radius: 3px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -292,6 +307,11 @@ input {
   .info li {
     display:inline;
     padding:1em; }
+  
+
+
+
+
    
    
    
@@ -302,4 +322,52 @@ input {
         background-color: #074f5f; }
 a:hover {
   color: #074f5f;
-  background-color: transparent; } 
+  background-color: transparent; }
+  
+  
+  
+  /* PROFILE PAGE */
+.profile-card {
+  padding-top: 25px;
+  /*padding-bottom: 25px;*/
+  border-radius: 5px;
+  background: #074f5f;
+  overflow: hidden;
+}
+.profile-card h4 {
+  font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 30px;
+  line-height: 26px;
+  margin-bottom: 2rem;
+}
+.profile-card h4 span {
+  font-size: 20px;
+  color: #fff;
+  display: block;
+}
+.profile-card p {
+  font-size: 16px;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .profile-card img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  .profile-card h4, .profile-card p {
+    text-align: center;
+  }
+  .profile-card .button-group .button {
+    font-size: 14px;
+  }
+  .profile-card .button-group .button span {
+    font-size: 20px;
+  }
+}
+/* END PROFILE PAGE */
