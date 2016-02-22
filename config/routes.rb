@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :locations
+  resources :groups
   get 'locations/new'
 
   get 'groups/new'

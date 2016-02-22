@@ -3,15 +3,17 @@
 one:
   primary_contact: MyString
   subject: MyString
-  date: 2016-02-17 14:26:00
+  date: 2016-02-22 23:01:54
   location_id: 1
-  group_size: 1
+  group_size: MyString
+  integer: MyString
   permission: false
 
 two:
   primary_contact: MyString
   subject: MyString
-  date: 2016-02-17 14:26:00
+  date: 2016-02-22 23:01:54
   location_id: 1
-  group_size: 1
+  group_size: MyString
+  integer: MyString
   permission: false

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Primary contact:</strong>
+  <%= @group.primary_contact %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @group.subject %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @group.date %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @group.location_id %>
+</p>
+
+<p>
+  <strong>Group size:</strong>
+  <%= @group.group_size %>
+</p>
+
+<p>
+  <strong>Integer:</strong>
+  <%= @group.integer %>
+</p>
+
+<p>
+  <strong>Permission:</strong>
+  <%= @group.permission %>
+</p>
+
+<%= link_to 'Edit', edit_group_path(@group) %> |
+<%= link_to 'Back', groups_path %>
