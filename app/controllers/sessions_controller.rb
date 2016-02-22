@@ -7,7 +7,9 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       log_in user
       remember user
+      session[:current_user_id] = user.id
       redirect_to user
+      
     else
       flash.now[:danger] = 'Invalid email/password combination'
       render 'new'
@@ -21,4 +23,11 @@ class SessionsController < ApplicationController
   
   def get_user
   end
+  
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_user
+      @user = User.find(params[:id])
+    end
+  
 end
