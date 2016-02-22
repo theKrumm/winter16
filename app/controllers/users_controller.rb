@@ -75,4 +75,15 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:username, :firstname, :lastname, :email, :password, :password_confirmation)
     end
+    
+    
+    def get_id
+      if user?
+        @id = @user.id
+        return @id
+      else
+        return nil
+      end
+    end
+    
 end
