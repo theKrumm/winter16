@@ -11,31 +11,56 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :primary_contact %><br>
-    <%= f.text_field :primary_contact %>
+<div class="row">
+  <div class="small-6 small-centered columns">
+    <div class="signup-panel">
+    
+      <p class="welcome">Create a New Study Group </p>
+      
+      <div class="row collapse">
+        <div class="small-12 columns">
+          <%= f.label :primary_contact, 'Primary Contact' %>
+          <%= f.text_field :primary_contact %>
+        </div>
+      </div>
+      
+      <div class="row collapse">
+        <div class="small-12 columns">
+          <%= f.label :subject %>
+          <%= f.text_field :subject %>
+        </div>
+      </div>
+      
+      <div class="row collapse">
+        <div class="small-12 columns">
+          <%= f.label :date %>
+          <%= f.datetime_select :date,{:discard_year=> true, :use_short_month=> true, 
+                                       :add_month_numbers=> true, :ampm=> true}, 
+                                       {:class=> 'date-select'} %>
+        </div>
+      </div>
+      
+      <div class="row uncollapse fields">
+        <div class="small-4 columns">
+          <%= f.label :location_id, 'Location ID' %>
+          <%= f.number_field :location_id %>
+        </div>
+      
+        <div class="small-4 columns">
+          <%= f.label :group_size, 'Group Size' %>
+          <%= f.number_field :group_size %>
+        </div>
+      
+        <div class="small-4 columns">
+          <%= f.label :permission, 'Private Group' %>
+          <%= f.check_box :permission %>
+        </div>
+      </div>
+      
+      <div class="field">
+        <%= f.submit %>
+      </div>
+    <% end %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :subject %><br>
-    <%= f.text_field :subject %>
-  </div>
-  <div class="field">
-    <%= f.label :date %><br>
-    <%= f.datetime_select :date %>
-  </div>
-  <div class="field">
-    <%= f.label :location_id %><br>
-    <%= f.number_field :location_id %>
-  </div>
-  <div class="field">
-    <%= f.label :group_size %><br>
-    <%= f.number_field :group_size %>
-  </div>
-  <div class="field">
-    <%= f.label :permission %><br>
-    <%= f.check_box :permission %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>

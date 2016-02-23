@@ -207,17 +207,17 @@ input {
 
 
 
-.login-box {
-  text-align: center;
-  border: 1px solid #bfbfbf;
-  padding: 1rem;
-  margin-top: 30px;
-}
-.login-box .welcome {
-  font-size: 26px;
-  text-align: center;
-  margin-left: 0;
-}
+/*.login-box {*/
+/*  text-align: center;*/
+/*  border: 1px solid #bfbfbf;*/
+/*  padding: 1rem;*/
+/*  margin-top: 30px;*/
+/*}*/
+/*.login-box .welcome {*/
+/*  font-size: 26px;*/
+/*  text-align: center;*/
+/*  margin-left: 0;*/
+/*}*/
 
 
 #signup {
@@ -371,3 +371,22 @@ a:hover {
   }
 }
 /* END PROFILE PAGE */
+
+
+
+
+
+
+/* NEW GROUP FORM */
+.date-select {
+  display: inline-block;
+  width: 18%;
+  position: relative;
+  font-size: 14px;
+}
+
+.fields {
+  text-align: center;
+  display: inline-block;
+  width: auto;
+}

@@ -1,15 +1,22 @@
 <div class="row">
   <div class="small-6 small-centered columns">
-    <div class="login-box">
-      <p class="welcome">Sign in to Study Buddy</p>
+    <div class="signup-panel">
+      <p class="welcome">Sign In to Study Buddy</p>
   
       <%= form_for(:session, url: login_path) do |f| %>
-      <div class="small-12 columns">
-        <%= f.email_field :email, :size=>"95", class: 'error', :placeholder => "Email" %>
+      
+      <div class="row collapse">
+        <div class="small-12 columns">
+          <%= f.label :email %>
+          <%= f.email_field :email, :size=>"95", class: 'error'%>
+        </div>
       </div>
       
-      <div class="small-12 columns">
-        <%= f.password_field :password, :size=>"95", class: 'error', :placeholder => "Password" %>
+      <div class="row collapse">
+        <div class="small-12 columns">
+          <%= f.label :password %>
+          <%= f.password_field :password, :size=>"95", class: 'error'%>
+        </div>
       </div>
         
       <div class="row collapse">
