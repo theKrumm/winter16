@@ -11,15 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160222231238) do
+ActiveRecord::Schema.define(version: 20160223000134) do
 
   create_table "groups", force: :cascade do |t|
     t.string   "primary_contact"
     t.string   "subject"
     t.datetime "date"
     t.integer  "location_id"
-    t.string   "group_size"
-    t.string   "integer"
+    t.integer  "group_size"
     t.boolean  "permission"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
