@@ -1,34 +1,47 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Primary contact:</strong>
-  <%= @group.primary_contact %>
-</p>
+<div class="row bump">
+   <div class="small-12 small-centered large-6 large-centered columns">
+      <div class="row">
+         <div class="profile-card">
 
-<p>
-  <strong>Subject:</strong>
-  <%= @group.subject %>
-</p>
-
-<p>
-  <strong>Date:</strong>
-  <%= @group.date %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @group.location_id %>
-</p>
-
-<p>
-  <strong>Group size:</strong>
-  <%= @group.group_size %>
-</p>
-
-<p>
-  <strong>Permission:</strong>
-  <%= @group.permission %>
-</p>
-
-<%= link_to 'Edit', edit_group_path(@group) %> |
-<%= link_to 'Back', groups_path %>
+            <div class="small-12 large-8 columns">
+                <h4>My Group</h4>
+                <p>
+                  <strong>Primary contact:</strong>
+                  <%= @group.primary_contact %>
+                </p>
+                
+                <p>
+                  <strong>Subject:</strong>
+                  <%= @group.subject %>
+                </p>
+                
+                <p>
+                  <strong>Date:</strong>
+                  <%= @group.date %>
+                </p>
+                
+                <p>
+                  <strong>Location:</strong>
+                  <%= @group.location_id %>
+                </p>
+                
+                <p>
+                  <strong>Group size:</strong>
+                  <%= @group.group_size %>
+                </p>
+                
+                <p>
+                  <strong>Permission:</strong>
+                  <%= @group.permission %>
+                </p>
+                
+                
+            </div>
+         </div>
+      </div>
+      <%= link_to 'Edit', edit_group_path(@group) %> |
+      <%= link_to 'Back', groups_path %>
+   </div>
+</div>

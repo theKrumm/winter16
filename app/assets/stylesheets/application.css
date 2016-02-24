@@ -50,16 +50,13 @@
 }
 
 
+
 /* ABOUT PAGE  */
 .about {
   background: url(about.jpg) no-repeat center center;
   background-size: cover;
   height: 50vh; }
   
-
-/*body {*/
-/*  background: #333; }*/
-
 .header.panel {
   margin: 3rem auto; }
   /*border: 2px solid #444;*/
@@ -132,11 +129,10 @@ input {
 
 
 
+
+
 .footer {
-  /*background-color: #4b2e83;*/
-  padding: 2rem 4rem;
   text-align: center;
-  /*color: #fff;*/
 }
 
 .footer i {
@@ -144,30 +140,29 @@ input {
 }
 
 .footer h4 {
-  /*color: #fff;*/
-  font-size: 1em;
+  color: #fff;
+  font-size: 2em;
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 2.5rem;
   margin-bottom: 10px;
 }
 
-.footer p, .footer a {
+.footer p {
   font-weight: 300;
-  font-size: .8em;
+  font-size: 1em;
+  color: #1a1a1a;
+  float: right;
+}
+.footer a {
+  font-weight: 300;
+  font-size: 1em;
   color: #0DA2C2;
+  float: right;
 }
-
-/*.footer a:hover {*/
-/*  color: #0a778f;*/
-/*  background-color: transparent; }*/
-
-@media only screen and (min-width: 40.063em) {
-  .footer .columns:nth-child(n+2) {
-    border-left: 1px solid #b3b3b3;
-    min-height: 280px;
-  }
-}
+.footer a:hover {
+  color: #0a778f;
+  background-color: transparent; }
 
 .footer-links {
   list-style-type: none;
@@ -179,12 +174,26 @@ input {
 
 
 /* MAIN SEARCH BAR  */
+
 .hero {
   background: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-317049.jpg") no-repeat center center;
-  background-size: cover;
-  height: 100vh; }
-
-  .hero .intro {
+  background-size: 100%;
+  height: 80vh; }
+  
+  .hero:before {
+    margin-top: 50px;
+    height: 80vh;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #999, #999);
+    opacity: .4;
+    }
+   .searchbar {
+    padding-top: 50rem;
     padding: 3rem;
     position: relative;
     top: 50%;
@@ -203,61 +212,8 @@ input {
     font-weight: 200;
     text-align: center;
     margin-bottom: 2rem; }
-
-
-
-
-/*.login-box {*/
-/*  text-align: center;*/
-/*  border: 1px solid #bfbfbf;*/
-/*  padding: 1rem;*/
-/*  margin-top: 30px;*/
-/*}*/
-/*.login-box .welcome {*/
-/*  font-size: 26px;*/
-/*  text-align: center;*/
-/*  margin-left: 0;*/
-/*}*/
-
-
-#signup {
-  background: url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7e0d267301619334dd0ec543b4ab3df1") no-repeat center center;
-  background-size: cover;
-}
-.signup-panel {
-  border-radius: 5px;
-  border: 1px solid #bfbfbf;
-  padding: 15px;
-  margin-top: 30px;
-}
-
-.signup-panel i {
-  font-size: 30px;
-  line-height: 50px;
-  color: #999;
-}
-.signup-panel form input, .signup-panel form span {
-  height: 50px;
-}
-.signup-panel .welcome {
-  font-size: 26px;
-  text-align: center;
-  margin-left: 0;
-}
-.signup-panel p {
-  font-size: 13px;
-  font-weight: 200;
-  margin-left: 25%;
-}
-/*.signup-panel .button {*/
-  /*margin-left: 50%;*/
-/*}*/
-
-
-
-
-
-/* INSTRUCTIONS ON MAIN PAGE*/
+    
+     /*INSTRUCTIONS ON MAIN PAGE*/
 .features {
   color: #999999;
   text-align: center; }
@@ -282,9 +238,7 @@ input {
       margin-bottom: 5rem; } }
 
 
-
-
-/* SUBJECTS AND SPACES CARDS */
+ /*SUBJECTS AND SPACES CARDS */
 .box {
   border-radius: 3px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -307,6 +261,72 @@ input {
   .info li {
     display:inline;
     padding:1em; }
+
+
+
+
+
+#signup {
+  background: url("/bg.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 85vh;
+}
+.signup-panel {
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+.signup-panel i {
+  font-size: 30px;
+  line-height: 50px;
+  color: #999;
+}
+.signup-panel form input, .signup-panel form span {
+  height: 50px;
+  font-size: 12px;
+
+}
+.signup-panel .welcome {
+  font-size: 26px;
+  text-align: center;
+  margin-left: 0;
+}
+.signup-panel p {
+  text-align: center;
+}
+
+
+/* NEW GROUP FORM */
+
+#new-group, #signin {
+  background: url(/forms.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 85vh;
+}
+.field input {
+ background-color: rgba(255,255,255,0.5);
+ font-size: 14px;
+}
+
+.date-select {
+  background-color: rgba(255,255,255,0.5);
+  display: inline-block;
+  width: 18%;
+  position: relative;
+  font-size: 14px;
+}
+.fields {
+  display: inline-block;
+  width: auto;
+}
+.checkbox {
+  text-align: center;
+}
+
+
+
   
 
 
@@ -377,16 +397,3 @@ a:hover {
 
 
 
-/* NEW GROUP FORM */
-.date-select {
-  display: inline-block;
-  width: 18%;
-  position: relative;
-  font-size: 14px;
-}
-
-.fields {
-  text-align: center;
-  display: inline-block;
-  width: auto;
-}

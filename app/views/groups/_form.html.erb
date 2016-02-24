@@ -18,20 +18,20 @@
       <p class="welcome">Create a New Study Group </p>
       
       <div class="row collapse">
-        <div class="small-12 columns">
+        <div class="small-12 columns field">
           <%= f.label :primary_contact, 'Primary Contact' %>
-          <%= f.text_field :primary_contact %>
+          <%= f.text_field :primary_contact%>
         </div>
       </div>
       
-      <div class="row collapse">
+      <div class="row collapse field">
         <div class="small-12 columns">
           <%= f.label :subject %>
           <%= f.text_field :subject %>
         </div>
       </div>
       
-      <div class="row collapse">
+      <div class="row collapse field">
         <div class="small-12 columns">
           <%= f.label :date %>
           <%= f.datetime_select :date,{:discard_year=> true, :use_short_month=> true, 
@@ -41,26 +41,29 @@
       </div>
       
       <div class="row uncollapse fields">
-        <div class="small-4 columns">
+        <div class="small-4 columns field">
           <%= f.label :location_id, 'Location ID' %>
           <%= f.number_field :location_id %>
         </div>
       
-        <div class="small-4 columns">
+        <div class="small-4 columns field">
           <%= f.label :group_size, 'Group Size' %>
           <%= f.number_field :group_size %>
         </div>
       
-        <div class="small-4 columns">
+        <div class="small-4 columns checkbox">
           <%= f.label :permission, 'Private Group' %>
           <%= f.check_box :permission %>
         </div>
       </div>
       
-      <div class="field">
-        <%= f.submit %>
+      <div class="row collapse">
+        <div class="small-4 small-centered columns">
+          <%= f.submit "Create Group", class: 'button' %>
+        </div>
       </div>
     <% end %>
     </div>
+    <%= link_to 'Back', groups_path %>
   </div>
 </div>

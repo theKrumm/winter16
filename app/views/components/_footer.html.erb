@@ -1,37 +1,45 @@
 <footer class="footer" id="footer">
 
     <div class="row column">
-
         <hr>
-        <ul class="menu">
-            <li>Study Buddy</li>
-            <li>
-                <%=link_to "Home", root_path %>
-            </li>
-            <li>
-                <%=link_to "About", about_path %>
-            </li>
-            <li>
-                <%=link_to "Contact", contact_path %>
-            </li>
-            <li class="float-right">Copyright 2016</li>
-        </ul>
+
+        <div class="small-10 columns">
+            <ul class="menu">
+                <li>Study Buddy</li>
+                <li>
+                    <%=link_to "Home", root_path %>
+                </li>
+                <li>
+                    <%=link_to "About", about_path %>
+                </li>
+                <li>
+                    <%=link_to "Contact", contact_path %>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="small-2 columns">
+            <p>Copyright 2016</p>
+        </div>
+        
     </div>
 
 </footer>
 
 
-<script>
-    $(window).bind("load", function() { // make sure footer sticks to bottom of the page
-        var footer = $("#footer");
-        var pos = footer.position();
-        var height = $(window).height();
-        height = height - pos.top;
-        height = height - footer.height();
-        if (height > 0) {
-            footer.css({
-                'margin-top': height + 'px'
-            });
-        }
-    });
-</script>
+<!--<script>
+<!--    $(window).bind("load", function() { // make sure footer sticks to bottom of the page-->
+<!--        var footer = $("#footer");-->
+<!--        var pos = footer.position(fixed);-->
+<!--        var height = $(window).height();-->
+<!--        height = height - pos.top;-->
+<!--        height = height - footer.height();-->
+<!--        if (height > 0) {-->
+<!--            footer.css({-->
+<!--                'margin-top': height + 'px'-->
+<!--            });-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+<!---->
+

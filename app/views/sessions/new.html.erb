@@ -1,34 +1,36 @@
-<div class="row">
-  <div class="small-6 small-centered columns">
-    <div class="signup-panel">
-      <p class="welcome">Sign In to Study Buddy</p>
-  
-      <%= form_for(:session, url: login_path) do |f| %>
-      
-      <div class="row collapse">
-        <div class="small-12 columns">
-          <%= f.label :email %>
-          <%= f.email_field :email, :size=>"95", class: 'error'%>
-        </div>
-      </div>
-      
-      <div class="row collapse">
-        <div class="small-12 columns">
-          <%= f.label :password %>
-          <%= f.password_field :password, :size=>"95", class: 'error'%>
-        </div>
-      </div>
+<div id="signin">
+  <div class="row">
+    <div class="small-6 small-centered columns">
+      <div class="signup-panel">
+        <p class="welcome">Sign In to Study Buddy</p>
+    
+        <%= form_for(:session, url: login_path) do |f| %>
         
-      <div class="row collapse">
-        <div class="small-4 small-centered columns">
-          <%= f.submit "Log In", class: "button" %>
+        <div class="row collapse field">
+          <div class="small-12 columns">
+            <%= f.label :email %>
+            <%= f.email_field :email, class: 'error'%>
+          </div>
         </div>
-      </div>
+        
+        <div class="row collapse field">
+          <div class="small-12 columns">
+            <%= f.label :password %>
+            <%= f.password_field :password, class: 'error'%>
+          </div>
+        </div>
           
-      <!--<%= f.submit "Log In", class: "button" %>-->
-      <% end %>
-  
-      <p>New user? <%= link_to "Sign up now!", signup_path %></p>
-    </div
+        <div class="row collapse ">
+          <div class="small-4 small-centered columns">
+            <%= f.submit "Log In", class: "button" %>
+          </div>
+        </div>
+            
+        <!--<%= f.submit "Log In", class: "button" %>-->
+        <% end %>
+    
+        <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+      </div>
+    </div>
   </div>
 </div>

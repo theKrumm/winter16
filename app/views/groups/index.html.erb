@@ -1,37 +1,47 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Groups</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Primary contact</th>
-      <th>Subject</th>
-      <th>Date</th>
-      <th>Location</th>
-      <th>Group size</th>
-      <th>Permission</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @groups.each do |group| %>
-      <tr>
-        <td><%= group.primary_contact %></td>
-        <td><%= group.subject %></td>
-        <td><%= group.date %></td>
-        <td><%= group.location_id %></td>
-        <td><%= group.group_size %></td>
-        <td><%= group.permission %></td>
-        <td><%= link_to 'Show', group %></td>
-        <td><%= link_to 'Edit', edit_group_path(group) %></td>
-        <td><%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Group', new_group_path %>
+<div id="list-groups">
+  <div class="row">
+    
+    <h4>Available Groups</h4>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Primary contact</th>
+          <th>Subject</th>
+          <th>Date</th>
+          <th>Location</th>
+          <th>Group size</th>
+          <th>Permission</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+    
+      <tbody>
+        <% @groups.each do |group| %>
+          <tr>
+            <td><%= group.primary_contact %></td>
+            <td><%= group.subject %></td>
+            <td><%= group.date %></td>
+            <td><%= group.location_id %></td>
+            <td><%= group.group_size %></td>
+            <td><%= group.permission %></td>
+            <td><%= link_to 'Show', group %></td>
+            <td><%= link_to 'Edit', edit_group_path(group) %></td>
+            <td><%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    
+    <br>
+    
+    <div class="row">
+      <div class="small-3 small-centered columns">
+        <%= button_to 'Create a New Group', new_group_path, :method=> :get, :class=> 'button' %>
+      </div>
+    </div>
+    
+  </div>
+</div>

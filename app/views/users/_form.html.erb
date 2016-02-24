@@ -11,51 +11,50 @@
     </div>
   <% end %>
 
-
   <div class="row">
      <div class="small-6 small-centered columns">
        <div class="signup-panel">
          <p class="welcome">Create your Study Buddy account</p>
          
-         <div class="row collapse">
+         <div class="row collapse field">
            <div class="small-12  columns">
                <%= f.label :username %>
-               <%= f.text_field :username, :size=>"95", class: 'error', :style=>"background-color: transparent" %>
+               <%= f.text_field :username, class: 'error' %>
            </div>
          </div>
 
-         <div class="row collapse">
+         <div class="row collapse field">
            <div class="small-12  columns">
                <%= f.label :first_name, 'First Name' %>
-               <%= f.text_field :firstname, :size=>"95", class: 'error', :style=>"background-color: transparent"  %>
+               <%= f.text_field :firstname, class: 'error' %>
           </div>
          </div>
 
-         <div class="row collapse">
+         <div class="row collapse field">
            <div class="small-12  columns">
                <%= f.label :last_name, 'Last Name' %>
-               <%= f.text_field :lastname, :size=>"95", class: 'error', :style=>"background-color: transparent"  %>
+               <%= f.text_field :lastname, class: 'error' %>
            </div>
          </div>
 
-         <div class="row collapse">
+         <div class="row collapse field">
            <div class="small-12  columns">
                <%= f.label :email %>
-               <%= f.email_field :email, :size=>"95", class: 'error', :style=>"background-color: transparent"  %>
+               <%= f.email_field :email, class: 'error' %>
            </div>
          </div>
 
-         <div class="row collapse">
+         <div class="row collapse field">
            <div class="small-12  columns">
                <%= f.label :password %>
-               <%= f.password_field :password, :size=>"95", class: 'error', :style=>"background-color: transparent"  %>
+               <%= f.password_field :password, class: 'error' %>
            </div>
          </div>
 
-         <div class="row collapse">
+         <div class="row collapse field">
            <div class="small-12  columns">
                <%= f.label :reenter_password, 'Re-Enter Password' %>
-               <%= f.password_field :password_confirmation, :size=>"95", :style=>"background-color: transparent"  %>
+               <%= f.password_field :password_confirmation %>
            </div>
          </div>
 
