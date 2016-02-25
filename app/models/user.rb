@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  
+  has_many :groups
+  
   attr_accessor :remember_token
   validates :firstname, :lastname, :username, presence: true
   validates_uniqueness_of :username

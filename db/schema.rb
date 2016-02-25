@@ -19,7 +19,9 @@ ActiveRecord::Schema.define(version: 20160223000134) do
     t.datetime "date"
     t.integer  "location_id"
     t.integer  "group_size"
+    t.string   "discription"
     t.boolean  "permission"
+    t.string   "members"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end

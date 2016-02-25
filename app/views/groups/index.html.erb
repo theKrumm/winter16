@@ -24,7 +24,7 @@
             <td><%= group.primary_contact %></td>
             <td><%= group.subject %></td>
             <td><%= group.date %></td>
-            <td><%= group.location_id %></td>
+            <td><%= Location.find(group.location_id).building +  Location.find(group.location_id).room%></td>
             <td><%= group.group_size %></td>
             <td><%= group.permission %></td>
             <td><%= link_to 'Show', group %></td>
