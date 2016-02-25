@@ -10,11 +10,16 @@ class GroupsController < ApplicationController
   # GET /groups/1
   # GET /groups/1.json
   def show
+     @group = Group.find(params[:id])
   end
 
   # GET /groups/new
   def new
     @group = Group.new
+  end
+
+  def show_room
+    @group.location = Location.find(params[:id])
   end
 
   # GET /groups/1/edit

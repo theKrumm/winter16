@@ -24,7 +24,9 @@
                 
                 <p>
                   <strong>Location:</strong>
-                  <%= @group.location_id %>
+                  <%= Location.find(@group.location_id).building +
+                    Location.find(@group.location_id).room %>
+                  
                 </p>
                 
                 <p>
