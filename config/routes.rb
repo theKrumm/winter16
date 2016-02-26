@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   post'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   
+  get 'testing' => 'pages#groups'
+  
   get 'groups' => 'pages#groups'
   get 'profile' => 'users#show'
   resources :users
