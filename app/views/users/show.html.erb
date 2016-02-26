@@ -1,29 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<!--<h3>My Profile</h3>-->
-<!--<p>-->
-<!--  <strong>Username:</strong>-->
-<!--  <%= @user.username %>-->
-<!--</p>-->
-
-<!--<p>-->
-<!--  <strong>Email:</strong>-->
-<!--  <%= @user.email %>-->
-<!--</p>-->
-
-<!--<p>-->
-<!--  <strong>Firstname:</strong>-->
-<!--  <%= @user.firstname %>-->
-<!--</p>-->
-
-<!--<p>-->
-<!--  <strong>Lastname:</strong>-->
-<!--  <%= @user.lastname %>-->
-<!--</p>-->
-
-
-
-
 <div class="row bump">
    <div class="small-12 small-centered large-6 large-centered columns">
       <div class="row">
@@ -31,15 +7,30 @@
 
             <div class="small-12 large-8 columns">
                <h4>My Profile</h4>
-               <p><i class="fi-at-sign"></i><span> Username: <%= @user.username %></span></p>
-               <p><i class="fi-mail"></i> Email: <%= @user.email %></p>
-               <p><i class="fi-info"></i> First Name: <%= @user.firstname %></p>
-               <p><i class="fi-info"></i> Last Name: <%= @user.lastname %></p>
+               
+               <div class="small-12 columns">
+                  <%= link_to 'Edit', edit_user_path(@user) %>
+                  <p><i class="fi-at-sign"></i><span><strong> Username: </strong> <%= @user.username %></span></p>
+               </div>
+               
+               <div class="small-12 columns">
+                  <%= link_to 'Edit', edit_user_path(@user) %>
+                  <p><i class="fi-mail"></i><strong> Email: </strong> <%= @user.email %></p>
+               </div>
+               
+               <div class="small-12 columns">
+                  <%= link_to 'Edit', edit_user_path(@user) %>
+                  <p><i class="fi-info"></i><strong> First Name: </strong> <%= @user.firstname %></p>
+               </div>
+               
+               <div class="small-12 columns">
+                  <%= link_to 'Edit', edit_user_path(@user) %>
+                  <p><i class="fi-info"></i><strong> Last Name: </strong> <%= @user.lastname %></p>
+               </div>
 
             </div>
          </div>
       </div>
-      <%= link_to 'Edit', edit_user_path(@user) %> |
       <%= link_to 'Back', users_path %>
    </div>
 </div>

@@ -153,6 +153,7 @@ input {
   font-size: 1em;
   color: #1a1a1a;
   float: right;
+
 }
 .footer a {
   font-weight: 300;
@@ -269,13 +270,13 @@ input {
 #signup {
   background: url("/bg.jpg") no-repeat center center;
   background-size: cover;
-  min-height: 85vh;
+  min-height: 95vh;
 }
 .signup-panel {
   border-radius: 5px;
   border: 1px solid #bfbfbf;
   padding: 15px;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 
 .signup-panel i {
@@ -286,12 +287,13 @@ input {
 .signup-panel form input, .signup-panel form span {
   height: 50px;
   font-size: 12px;
-
 }
-.signup-panel .welcome {
+#signup .welcome {
   font-size: 26px;
   text-align: center;
   margin-left: 0;
+  padding-top: 50px;
+
 }
 .signup-panel p {
   text-align: center;
@@ -300,10 +302,17 @@ input {
 
 /* NEW GROUP FORM */
 
-#new-group, #signin {
+#new-group, #signin, #edit {
   background: url(/forms.jpg) no-repeat center center;
   background-size: cover;
-  min-height: 85vh;
+  min-height: 95vh;
+}
+#new-group .welcome, #signin .welcome, #edit .welcome {
+  font-size: 26px;
+  text-align: center;
+  margin-left: 0;
+  padding-top: 50px;
+
 }
 .field input {
  background-color: rgba(255,255,255,0.5);
@@ -316,6 +325,11 @@ input {
   width: 18%;
   position: relative;
   font-size: 14px;
+}
+.location-select {
+   background-color: rgba(255,255,255,0.5);
+   font-size: 14px;
+   height: 80%;
 }
 .fields {
   display: inline-block;
@@ -368,7 +382,14 @@ a:hover {
   display: block;
 }
 .profile-card p {
+  padding-left: 1rem;
+  display: inline-block;
   font-size: 16px;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.profile-card a {
+  font-size: 12px;
   margin-bottom: 2rem;
   color: #fff;
 }
@@ -391,8 +412,6 @@ a:hover {
   }
 }
 /* END PROFILE PAGE */
-
-
 
 
 
