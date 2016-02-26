@@ -14,9 +14,7 @@
 <div class="row">
   <div class="small-6 small-centered columns">
     <div class="signup-panel">
-    
-      <p class="welcome">Create a New Study Group </p>
-      
+          
       <div class="row collapse">
         <div class="small-12 columns field">
           <%= f.label :primary_contact, 'Primary Contact' %>
@@ -50,7 +48,8 @@
       <div class="row uncollapse fields">
         <div class="small-4 columns field">
           <%= f.label :location_id, 'Location' %>
-          <%= f.select(:location_id, options_for_select(Location.all.collect {|s| s.id}))%>
+          <%= f.select(:location_id, options_for_select(Location.all.collect {|s| s.id}),
+                      {}, {:class=> 'location-select'} )%>
         </div>
       
         <div class="small-4 columns field">
