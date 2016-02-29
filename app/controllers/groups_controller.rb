@@ -21,6 +21,10 @@ class GroupsController < ApplicationController
   def top_5
     @groups = Group.order('group_size').limit(5)
   end
+  
+  def search
+        @groups = Group.find_by_subject(subject).limit(6)
+  end
 
   def show_room
     @group.location = Location.find(params[:id])
