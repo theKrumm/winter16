@@ -9,28 +9,25 @@
                <h4>My Profile</h4>
                
                <div class="small-12 columns">
-                  <%= link_to 'Edit', edit_user_path(@user) %>
                   <p><i class="fi-at-sign"></i><span><strong> Username: </strong> <%= @user.username %></span></p>
                </div>
                
                <div class="small-12 columns">
-                  <%= link_to 'Edit', edit_user_path(@user) %>
                   <p><i class="fi-mail"></i><strong> Email: </strong> <%= @user.email %></p>
                </div>
                
                <div class="small-12 columns">
-                  <%= link_to 'Edit', edit_user_path(@user) %>
                   <p><i class="fi-info"></i><strong> First Name: </strong> <%= @user.firstname %></p>
                </div>
                
                <div class="small-12 columns">
-                  <%= link_to 'Edit', edit_user_path(@user) %>
                   <p><i class="fi-info"></i><strong> Last Name: </strong> <%= @user.lastname %></p>
                </div>
 
             </div>
          </div>
       </div>
+      <%= link_to 'Edit', edit_user_path(@user) %> |
       <%= link_to 'Back', users_path %>
    </div>
 </div>
