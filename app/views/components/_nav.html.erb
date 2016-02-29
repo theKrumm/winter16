@@ -1,22 +1,36 @@
 <div id="navigation">
-  <div class="top-bar" id="realEstateMenu">
+
+   <!--Small Navigation -->
+  <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title">Menu</div>
+  </div>
+  
+
+   <!--Medium & Large Navigation-->
+  <nav class="top-bar" data-topbar id="nav-menu">
     <div class="top-bar-left">
-      <ul class="menu" data-responsive-menu="accordion">
+      <ul class="vertical medium-horizontal menu">
         <li class="menu-text"><%= link_to "Study Buddy", root_path %></li>
         <li><%= link_to "Study Groups", groups_path %></li>
         <li><%= link_to "Locations", locations_path %></li>
       </ul>
     </div>
     <div class="top-bar-right">
-      <ul class="menu">
+      <ul class="vertical medium-horizontal menu">
         <% if logged_in? %>
-          <li><%= link_to "My Account", { controller: "users", action: "show", id: session[:current_user_id]} %></li>
-          <li><%= link_to "Log out", logout_path, method: "delete" %></li>
+          <li class="left"><%= link_to "My Account", { controller: "users", action: "show", id: session[:current_user_id]} %></li>
+          <li class="right"><%= link_to "Log out", logout_path, method: "delete" %></li>
         <% else %>
-          <li><%= link_to "Sign Up", signup_path %></li>
-          <li><%= link_to "Log In", login_path %></li>
+          <li class="left"><%= link_to "Sign Up", signup_path %></li>
+          <li class="right"><%= link_to "Log In", login_path %></li>
         <% end %>
       </ul>
     </div>
-  </div>
+  </nav>
 </div>
+
+<script>
+
+</script>
+

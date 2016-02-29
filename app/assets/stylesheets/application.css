@@ -86,27 +86,72 @@
 
 
 /*  NAV BAR */
+
+/* Small Navigation */
+.title-bar {
+  background-color: #fff;  
+  height: 50px;  
+}
+.menu-icon {
+  background-color: #0DA2C2;
+  margin-top: 0.5em;
+}
+.title-bar-title {
+  color: #0DA2C2; 
+  margin-top: 0.5em;
+}
+
+/* Medium & Large Navigation*/
 #navigation {
 position: fixed;
 z-index: 10; 
 width: 100%;
 }
-#navigation .menu-text a {
+#navigation .top-bar {
+ background-color: #fff; 
+}
+#navigation .menu-text {
+  letter-spacing: 0.1em;
+  font-size: 14px;
   color: #000;
+  background-color: #fff;
   padding-top: 0;
   padding-bottom: 0;
+  padding-left: 0;
 }
-#navigation {
-position: fixed;
-z-index: 10;
-width: 100%; }
-#navigation a {
-  color: #0DA2C2; }
-#navigation a:hover {
-  color: #074f5f;
-  background-color: transparent; }
-#navigation .hover.button {
-  color: #000; }
+#navigation .menu {
+  font-size: 14px;
+}
+#navigation .top-bar-left a {
+  color: #333; 
+  background-color: #fff;
+}
+#navigation .top-bar-left a:hover {
+  color: #0DA2C2;
+  background-color: #fff;
+}
+#navigation .top-bar-right .left a {
+  color: #0DA2C2; 
+  background-color: #fff;
+}
+#navigation .top-bar-right .left a:hover {
+  color: #0a778f;
+  background-color: #fff;
+}
+#navigation .top-bar-right .right a {
+  color: #fff; 
+  background-color: #0DA2C2;
+}
+#navigation .top-bar-right .right a:hover {
+  color: #fff;
+  background-color: #0a778f;
+}
+@media only screen and (min-width: 40.063em) {
+  .title-bar {
+    display: none;
+  }
+}
+
 
 
 .debug_dump {
@@ -180,9 +225,7 @@ input {
   background: url(/home.jpg) no-repeat center center;
   background-size: cover;
   height: 80vh; 
-    
-}
-  
+} 
   .hero:before {
     margin-top: 50px;
     height: 80vh;
@@ -193,8 +236,7 @@ input {
     bottom: 0;
     left: 0;
     background-image: linear-gradient(to bottom right, #999, #999);
-    opacity: .4;
-    }
+    opacity: .4; }
    .searchbar {
     padding-top: 50rem;
     padding: 3rem;
