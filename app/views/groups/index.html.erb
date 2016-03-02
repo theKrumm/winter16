@@ -23,7 +23,7 @@
           <tr>
             <td><%= group.primary_contact %></td>
             <td><%= group.subject %></td>
-            <td><%= group.date %></td>
+            <td><%= group.date.to_formatted_s(:long_ordinal) %></td>
             <td><%= Location.find(group.location_id).building +  Location.find(group.location_id).room%></td>
             <td><%= group.group_size %></td>
             <td><%= group.permission %></td>
