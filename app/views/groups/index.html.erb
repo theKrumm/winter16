@@ -39,7 +39,9 @@
     
     <div class="row">
       <div class="small-8 large-4 small-centered columns">
-        <%= button_to 'Create a New Group', new_group_path, :method=> :get, :class=> 'button' %>
+        <% if logged_in? %>
+          <%= button_to 'Create a New Group', new_group_path, :method=> :get, :class=> 'button' %>
+        <% end %>
       </div>
     </div>
     
