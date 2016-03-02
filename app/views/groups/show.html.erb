@@ -19,15 +19,16 @@
                 
                 <p>
                   <strong>Date:</strong>
-                  <%= @group.date %>
+                  <%= @group.date.to_formatted_s(:long_ordinal) %>
                 </p>
                 
                 <p>
                   <strong>Location:</strong>
                   <%= Location.find(@group.location_id).building +
                     Location.find(@group.location_id).room %>
-                  
                 </p>
+                
+                <br>
                 
                 <p>
                   <strong>Group size:</strong>
@@ -35,8 +36,8 @@
                 </p>
                 
                 <p>
-                  <strong>Permission:</strong>
-                  <%= @group.permission %>
+                  <strong>Description:</strong>
+                  <%= @group.discription %>
                 </p>
                 
                 

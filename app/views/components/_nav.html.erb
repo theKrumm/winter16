@@ -19,7 +19,7 @@
     <div class="top-bar-right">
       <ul class="vertical medium-horizontal menu">
         <% if logged_in? %>
-          <li class="left"><%= link_to "My Account", { controller: "users", action: "show", id: session[:current_user_id]} %></li>
+          <li class="left"><%= link_to "My Account", current_user %></li>
           <li class="right"><%= link_to "Log out", logout_path, method: "delete" %></li>
         <% else %>
           <li class="left"><%= link_to "Sign Up", signup_path %></li>

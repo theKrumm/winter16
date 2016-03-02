@@ -11,15 +11,17 @@
   
           <div class="row">
             <div class="small-12 large-8 small-centered columns">
-              <input type="text" placeholder="Find Your Class (e.g. TMATH 115)">
+              <%= form_tag(groups_path, :method => "get", id: "search-form") do %>
+              <%= text_field_tag :search, params[:search], placeholder: "Find Your Class (e.g. TMATH 115)" %>
+              <div class="row">
+                <div class="small-4 medium-3 large-2 small-centered columns">
+                  <%= submit_tag "Go", class: 'expanded button', :subject => nil %>
+                </div>
+              </div>
+              <% end %>
+        
             </div>
           </div>
-  
-        <div class="row">
-          <div class="small-4 medium-3 large-2 small-centered columns">
-            <a class="expanded button">Go</a>
-          </div>
-        </div>
     </div>
   </div>
   
@@ -72,7 +74,6 @@
           <div class="info">
             <h3 class="text-center">Subjects</h4>
             <p>Currently trending subjects</p>
-            
             <ul>
               <li><a href="#">One</a></li>
               <li><a href="#">Two</a></li>

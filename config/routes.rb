@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :groups
   resources :locations
-  resources :groups
+
   get 'locations/new'
 
   get 'groups/new'

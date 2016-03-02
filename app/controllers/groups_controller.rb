@@ -4,7 +4,11 @@ class GroupsController < ApplicationController
   # GET /groups
   # GET /groups.json
   def index
-    @groups = Group.all
+      if params[:search]
+        @groups = Group.search(params[:search]).order("created_at DESC")
+      else
+        @groups = Group.all
+    end
   end
 
   # GET /groups/1
@@ -16,10 +20,6 @@ class GroupsController < ApplicationController
   # GET /groups/new
   def new
     @group = Group.new
-  end
-  
-  def top_5
-    @groups = Group.order('group_size').limit(5)
   end
 
   def show_room
@@ -78,6 +78,6 @@ class GroupsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def group_params
-      params.require(:group).permit(:primary_contact, :subject, :date, :location_id, :group_size, :permission)
+      params.require(:group).permit(:primary_contact, :subject, :date, :location_id, :group_size,:discription, :permission)
     end
 end

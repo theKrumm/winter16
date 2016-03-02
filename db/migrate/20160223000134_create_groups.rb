@@ -6,8 +6,8 @@ class CreateGroups < ActiveRecord::Migration
       t.datetime :date
       t.integer :location_id
       t.integer :group_size
+      t.string :discription
       t.boolean :permission
-
       t.timestamps null: false
     end
   end
