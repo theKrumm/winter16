@@ -4,4 +4,6 @@ class Group < ActiveRecord::Base
     def self.search(query)
         where("subject like ?", "%#{query}%")
     end
+    
+    
 end

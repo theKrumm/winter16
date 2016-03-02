@@ -3,17 +3,13 @@
 <div id="list-groups">
   <div class="row">
     
-    <h4>Available Groups</h4>
-    
     <table>
       <thead>
         <tr>
-          <th>Primary contact</th>
           <th>Subject</th>
           <th>Date</th>
           <th>Location</th>
           <th>Group size</th>
-
           <th colspan="3"></th>
         </tr>
       </thead>
@@ -21,27 +17,13 @@
       <tbody>
         <% @groups.each do |group| %>
           <tr>
-            <td><%= group.primary_contact %></td>
             <td><%= group.subject %></td>
             <td><%= group.date.to_formatted_s(:long_ordinal) %></td>
             <td><%= Location.find(group.location_id).building +  Location.find(group.location_id).room%></td>
             <td><%= group.group_size %></td>
-
-            <td><%= link_to 'Show', group %></td>
-            <td><%= link_to 'Edit', edit_group_path(group) %></td>
-            <td><%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>
     </table>
-    
-    <br>
-    
-    <div class="row">
-      <div class="small-8 large-4 small-centered columns">
-        <%= button_to 'Create a New Group', new_group_path, :method=> :get, :class=> 'button' %>
-      </div>
-    </div>
-    
   </div>
 </div>
