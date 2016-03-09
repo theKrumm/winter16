@@ -8,7 +8,7 @@ class GroupsController < ApplicationController
         @groups = Group.search(params[:search]).order("created_at DESC")
       else
         @groups = Group.all
-    end
+      end
   end
 
   # GET /groups/1

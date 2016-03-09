@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   
-  has_and_belongs_to_many :groups
+  has_many :groups, through: :members
   
   attr_accessor :remember_token
   validates :firstname, :lastname, :username, presence: true
