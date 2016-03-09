@@ -3,27 +3,27 @@
 <div class="homepage">
 
   <div class="hero">
-  
     <div class="searchbar">
-    
         <div class="small-12 columns"></div>
-          <h1 class="text-center">STUDY BUDDY</h1>
+          <h1 class="text-center">Study Buddy</h1>
   
           <div class="row">
             <div class="small-12 large-8 small-centered columns">
-              <input type="text" placeholder="Find Your Class (e.g. TMATH 115)">
+              <%= form_tag(groups_path, :method => "get", id: "search-form") do %>
+              <%= text_field_tag :search, params[:search], placeholder: "Find Your Class (e.g. TMATH 115)" %>
             </div>
           </div>
-  
-        <div class="row">
-          <div class="small-4 medium-3 large-2 small-centered columns">
-            <a class="expanded button">Go</a>
-          </div>
-        </div>
+          
+          <div class="row">
+            <div class="small-4 small-centered columns">
+              <%= submit_tag "Go", class: 'expanded button', :subject => nil %>
+            </div>
+           </div>
+           <% end %>
     </div>
   </div>
   
-  
+  <div class = "row">
     <div class="row features">
       <div class="medium-4 columns">
         <div class="round-icon">
@@ -50,59 +50,50 @@
         <hr>
       </div>
     </div>
-  
+    
+    <div class="row">
+      <div class="small-4 small-centered columns">
+        <%= link_to "Get Started!", signup_path, {:style=>'color:#FFFFFF;', :class => "expanded button"} %>
+      </div>
+    </div>
+  </div>  
+    
+    
+  <hr>
+    
+  <div class="row">
+    <div class="medium-6 columns">
+      <div class="box">
+        <div class="info">
+          <h3 class="text-center">Subjects</h4>
+          <p>Currently trending subjects</p>
+          <ul>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+            <li><a href="#">Five</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="medium-6 columns">
+      <div class="box">
+        <div class="info">
+          <h3 class="text-center">Spaces</h4>
+          <p>Available study locations</p>
+          
+          <ul>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+            <li><a href="#">Five</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <br>
-  
-    <div class="row">
-      <div class="small-4 medium-3 large-2 small-centered columns">
-        <%= button_to "Get Started!", signup_path, :class=> "button" %>
-        <!--<a class="expanded button">Get Started!</a>-->
-      </div>
-    </div>
-    
-    
-    <hr>
-    
-    <div class="row">
-      <div class="medium-6 columns">
-        <div class="box">
-          <!--<div class="box-icon">-->
-          <!--  <span class="fi-pencil"></span>-->
-          <!--</div>-->
-          <div class="info">
-            <h3 class="text-center">Subjects</h4>
-            <p>Currently trending subjects</p>
-            
-            <ul>
-              <li><a href="#">One</a></li>
-              <li><a href="#">Two</a></li>
-              <li><a href="#">Three</a></li>
-              <li><a href="#">Four</a></li>
-              <li><a href="#">Five</a></li>
-            </ul>
-    
-          </div>
-        </div>
-      </div>
-      <div class="medium-6 columns">
-        <div class="box">
-          <!--<div class="box-icon">-->
-          <!--  <span class="fi-home"></span>-->
-          <!--</div>-->
-          <div class="info">
-            <h3 class="text-center">Spaces</h4>
-            <p>Available study locations</p>
-            
-            <ul>
-              <li><a href="#">One</a></li>
-              <li><a href="#">Two</a></li>
-              <li><a href="#">Three</a></li>
-              <li><a href="#">Four</a></li>
-              <li><a href="#">Five</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!--</div>-->
 </div>

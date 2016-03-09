@@ -2,39 +2,75 @@
 
 <div id="list-groups">
   <div class="row">
-    
-    <h4>Available Locations</h4>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Building Name</th>
-            <th>Room Number</th>
-            <th colspan="3"></th>
-          </tr>
-        </thead>
-      
-        <tbody>
-          <% @locations.each do |location| %>
-            <tr>
-              <td><%= location.building %></td>
-              <td><%= location.room %></td>
-              <td><%= link_to 'Show', location %></td>
-              <td><%= link_to 'Edit', edit_location_path(location) %></td>
-              <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-      
-      <br>
-      
-      <div class="row">
-        <div class="small-8 large-4 small-centered columns">
-          <%= button_to 'Create a New Location', new_location_path, :method=> :get, :class=> 'button' %>
-      </div>
-    </div>
-    
+    <h4>Available Study Locations</h4>
   </div>
+  
+  <div class="row">
+    <% @locations.each do |location| %>
+      <div class="small-4 end columns">
+        <div class="listgroups">
+          <div class="row">
+            <div class="row list-details">
+              <h5><%= location.building %> <%= location.room %></h5>
+            </div>
+          </div>
+          
+          <ul class="inline-list">
+            <li><%= link_to 'Show', location, {:style=>'color:#FFFFFF;', :class => "list_button"} %></li>
+            <li><%= link_to 'Edit', edit_location_path(location), {:style=>'color:#FFFFFF;', :class => "list_button"} %></li>
+            <li><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' }, :style=>'color:#FFFFFF;', :class => "list_button" %></li>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  
+  <div class="row">
+    <div class="small-8 large-4 small-centered columns">
+      <%= link_to "Create a New Location", new_location_path, {:style=>'color:#FFFFFF;', :class => "expanded button"} %>
+      <!--<%= button_to 'Create a New Location', new_location_path, :method=> :get, :class=> 'expanded button' %>-->
+    </div>
+  </div>
+    
 </div>
+
+<!--<div id="list-groups">-->
+<!--  <div class="row">-->
+    
+<!--    <h4>Available Locations</h4>-->
+
+<!--      <table border = "1">-->
+<!--        <thead>-->
+<!--          <tr>-->
+<!--            <th>Building Name</th>-->
+<!--            <th>Room Number</th>-->
+<!--            <th colspan="3"></th>-->
+<!--          </tr>-->
+<!--        </thead>-->
       
+<!--        <div class = "row">-->
+<!--            <tbody>-->
+<!--              <% @locations.each do |location| %>-->
+<!--                <tr>-->
+<!--                  <td><%= location.building %></td>-->
+<!--                  <td><%= location.room %></td>-->
+<!--                  <td><%= link_to 'Show', location %></td>-->
+<!--                  <td><%= link_to 'Edit', edit_location_path(location) %></td>-->
+<!--                  <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+<!--                </tr>-->
+<!--              <% end %>-->
+<!--            </tbody>-->
+<!--        </div>-->
+        
+<!--      </table>-->
+      
+<!--      <br>-->
+      
+<!--      <div class="row">-->
+<!--        <div class="small-8 large-4 small-centered columns">-->
+<!--          <%= link_to "Create a New Location", new_location_path, {:style=>'color:#FFFFFF;', :class => "expanded button"} %>-->
+          <!--<%= button_to 'Create a New Location', new_location_path, :method=> :get, :class=> 'expanded button' %>-->
+<!--      </div>-->
+<!--    </div>-->
+    
+<!--  </div>-->
+<!--</div>-->

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :groups
   resources :locations
-  resources :groups
+
   get 'locations/new'
 
   get 'groups/new'
@@ -13,8 +13,6 @@ Rails.application.routes.draw do
   get 'login' => 'sessions#new'
   post'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
-  
-  get 'testing' => 'groups#subject_trend'
   
   get 'groups' => 'pages#groups'
   get 'profile' => 'users#show'

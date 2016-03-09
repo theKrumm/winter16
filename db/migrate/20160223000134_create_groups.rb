@@ -10,7 +10,6 @@ class CreateGroups < ActiveRecord::Migration
       #t.integer :group_member_id
       t.string :discription #refactor discription to description after quarter ends.
       t.boolean :permission
-
       t.timestamps null: false
     end
   end
